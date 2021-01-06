@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="app">
+        <h1>Cringinator</h1>
+        <span>Makes your text cringer</span>
+        <br>
+        <select name="type" id="type">
+            <option value="classic">Classic</option>
+            <option value="inverted">Classic Inverted</option>
+            <option value="no-space">Ignore Spaces</option>
+            <option value="no-space-inverted">Ignore Spaces Inverted</option>
+        </select>
+        <br>
+        <textarea name="input" id="input" cols="45" rows="5"></textarea>
+        <br>
+        <div id="output-container">
+            <div id="output"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Copyright Giacomo Ellero 2021</p>
+    </footer>
+
+    <script type="module" src="index.js"></script>
+</body>
+
+</html>

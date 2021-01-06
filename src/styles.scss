@@ -1,0 +1,47 @@
+$font-stack: Arial, Helvetica, sans-serif;
+
+body {
+    width: 70%;
+    margin: 10% auto;
+    font-family: $font-stack;
+    text-align: center;
+}
+
+footer {
+    position: fixed;
+    text-align-last: center;
+    bottom: 1em;
+    left: 0;
+    width: 100%;
+}
+
+h1 {
+    color: green;
+    font-size: 48px;
+}
+
+span {
+    font-size: larger;
+}
+
+#input {
+    font-size: large;
+    margin: 3em;
+    font-family: $font-stack;
+}
+
+#output-container{
+    min-height: 101px;
+    background-color: black;
+    border-radius: 5px;
+    padding: 1px;
+
+    #output{
+        border-radius: 5px;
+        min-height: 100px;
+        background-color: #f1f1f1;
+        font-size: large;
+        cursor: pointer;
+        padding: 1em;
+    }
+}
