@@ -1,6 +1,6 @@
 function makeCringeClassic(input: string): string {
   let out = '';
-  for (let i = 0; i < input.length; i += 1) {
+  for (let i = 0; i < input.length; i++) {
     if (i % 2 === 0) {
       out += input[i].toUpperCase();
     } else {
@@ -12,7 +12,7 @@ function makeCringeClassic(input: string): string {
 
 function makeCringeInverse(input: string): string {
   let out = '';
-  for (let i = 0; i < input.length; i += 1) {
+  for (let i = 0; i < input.length; i++) {
     if (i % 2 !== 0) {
       out += input[i].toUpperCase();
     } else {
@@ -27,7 +27,7 @@ const regex = /( |\.|,|;|:|'|\?|!)/;
 function makeCringeNoSpaces(input: string): string {
   let out = '';
   let realIndex = 0;
-  for (let i = 0; i < input.length; i += 1) {
+  for (let i = 0; i < input.length; i++) {
     const symbol = input[i].match(regex);
     if (symbol) {
       out += symbol[0];
@@ -46,7 +46,7 @@ function makeCringeNoSpaces(input: string): string {
 function makeCringeNoSpacesInverse(input: string): string {
   let out = '';
   let realIndex = 0;
-  for (let i = 0; i < input.length; i += 1) {
+  for (let i = 0; i < input.length; i++) {
     const symbol = input[i].match(regex);
     if (symbol) {
       out += symbol[0];
@@ -62,9 +62,14 @@ function makeCringeNoSpacesInverse(input: string): string {
   return out;
 }
 
+function addSpaces(input: string, n: number): string {
+  return input.split('').join('\xa0'.repeat(n));
+}
+
 export {
   makeCringeClassic,
   makeCringeInverse,
   makeCringeNoSpaces,
   makeCringeNoSpacesInverse,
+  addSpaces,
 };

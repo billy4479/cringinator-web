@@ -13,13 +13,28 @@
         <h1>Cringinator</h1>
         <span>Makes your text cringer</span>
         <br>
-        <select name="type" id="type">
-            <option value="classic">Classic</option>
-            <option value="inverted">Classic Inverted</option>
-            <option value="no-space">Ignore Spaces</option>
-            <option value="no-space-inverted">Ignore Spaces Inverted</option>
-        </select>
+
+        <label> Inverse (Classic by default) </label>
+        <input type="checkbox" id="inverse">
         <br>
+
+        <label> All Caps </label>
+        <input type="checkbox" id="all-caps">
+        <br>
+
+        <label> All Low </label>
+        <input type="checkbox" id="all-low">
+        <br>
+
+        <label> Ignore Spaces </label>
+        <input type="checkbox" id="ignore-spaces">
+        <br>
+
+        <label> Add Spaces </label>
+        <input type="checkbox" id="add-spaces">
+        <input type="number" id="spaces-to-add" disabled>
+        <br>
+
         <textarea name="input" id="input" cols="45" rows="5"></textarea>
         <br>
         <div id="output-container">
