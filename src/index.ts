@@ -17,7 +17,9 @@ function displayResult(event: Event) {
   let ignoreSpaces = (document.getElementById(
     'ignore-spaces'
   ) as HTMLInputElement).checked;
-  let spacesToAdd = 0;
+  let spacesToAdd = parseInt(
+    (document.getElementById('spaces-to-add') as HTMLInputElement).value
+  );
 
   const target = event.target as HTMLInputElement;
   switch (target.id) {
@@ -83,11 +85,20 @@ function displayResult(event: Event) {
       n.disabled = !target.checked;
       if (target.checked) spacesToAdd = parseInt(n.value);
       else spacesToAdd = 0;
+      if (spacesToAdd < 0) {
+        spacesToAdd = 0;
+        n.value = '0';
+      }
 
       break;
 
     case 'spaces-to-add':
+      const i = document.getElementById('spaces-to-add') as HTMLInputElement;
       if (!target.disabled) spacesToAdd = parseInt(target.value);
+      if (spacesToAdd < 0) {
+        spacesToAdd = 0;
+        i.value = '0';
+      }
       break;
 
     default:
