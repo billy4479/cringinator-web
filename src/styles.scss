@@ -8,11 +8,7 @@ body {
 }
 
 footer {
-  position: fixed;
-  text-align-last: center;
-  bottom: 1em;
-  left: 0;
-  width: 100%;
+  margin-top: 5em;
 }
 
 h1 {
@@ -32,9 +28,8 @@ span {
   margin: auto;
   margin-top: 2em;
   max-width: 50%;
-  overflow: hidden;
+  overflow: scroll;
   white-space: nowrap;
-  text-overflow: ellipsis;
 
   #spaces-to-add {
     margin-left: 2em;
@@ -50,6 +45,7 @@ span {
   font-family: $font-stack;
   resize: none;
   width: 75%;
+  min-width: 40%;
   padding: 1em;
 }
 
