@@ -24,24 +24,40 @@ span {
   font-size: larger;
 }
 
-#input {
-  font-size: large;
-  margin: 3em;
-  font-family: $font-stack;
+#options {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 1em;
+  text-align: left;
+  margin: auto;
+  margin-top: 2em;
+  max-width: 50%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+  #spaces-to-add {
+    margin-left: 2em;
+    width: auto;
+  }
 }
 
-#output-container {
-  min-height: 101px;
-  background-color: black;
-  border-radius: 5px;
-  padding: 1px;
+#input {
+  font-size: large;
+  margin: auto;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  font-family: $font-stack;
+  resize: none;
+  width: 75%;
+}
 
-  #output {
-    border-radius: 5px;
-    min-height: 100px;
-    background-color: #f1f1f1;
-    font-size: large;
-    cursor: pointer;
-    padding: 1em;
-  }
+#output {
+  border: 1px solid black;
+  border-radius: 5px;
+  min-height: 100px;
+  background-color: #f1f1f1;
+  font-size: large;
+  cursor: pointer;
+  padding: 1em;
 }

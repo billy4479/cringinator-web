@@ -14,32 +14,38 @@
         <span>Makes your text cringer</span>
         <br>
 
-        <label> Inverse (Classic by default) </label>
-        <input type="checkbox" id="inverse">
-        <br>
+        <div id="options">
+            <label> Classic </label>
+            <input type="radio" name="mode" id="mode" value="classic" checked>
+            <br>
 
-        <label> All Caps </label>
-        <input type="checkbox" id="all-caps">
-        <br>
+            <label> Inverse </label>
+            <input type="radio" name="mode" id="mode" value="inverse">
+            <br>
 
-        <label> All Low </label>
-        <input type="checkbox" id="all-low">
-        <br>
+            <label> All Caps </label>
+            <input type="radio" name="mode" id="mode" value="all-caps">
+            <br>
 
-        <label> Ignore Spaces </label>
-        <input type="checkbox" id="ignore-spaces">
-        <br>
+            <label> All Low </label>
+            <input type="radio" name="mode" id="mode" value="all-low">
+            <br>
 
-        <label> Add Spaces </label>
-        <input type="checkbox" id="add-spaces">
-        <input type="number" id="spaces-to-add" disabled>
-        <br>
+            <label> Ignore Spaces </label>
+            <input type="checkbox" id="ignore-spaces">
+            <br>
+
+            <label> Add Spaces </label>
+            <input type="checkbox" id="add-spaces">
+            <input type="number" id="spaces-to-add" disabled>
+            <br>
+
+        </div>
+
 
         <textarea name="input" id="input" cols="45" rows="5"></textarea>
         <br>
-        <div id="output-container">
-            <div id="output"></div>
-        </div>
+        <div id="output"></div>
         <br>
         <a href="https://github.com/billy4479/cringinator-web" target="_blank" rel="noreferrer noopener">
             <img alt="GitHub Repo stars"
